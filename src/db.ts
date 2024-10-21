@@ -9,7 +9,6 @@ import { FIRST_COOLDOWN, NEXT_COOLDOWN } from "../config";
 require('dotenv').config("../.env");
 const DB_CONNECTION = process.env.DB_CONNECTION;
 let endTimer: NodeJS.Timeout;
-let newTimer: NodeJS.Timeout;
 
 export const init = () => {
   if (DB_CONNECTION === undefined) return;
